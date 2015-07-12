@@ -26,10 +26,10 @@ public class leveCreater : MonoBehaviour {
         //parseXML
 
         //makeMap
-        
+        createLevel();
         //Instantiate(Resources.Load("levelUnitBrick"));
-        GameObject objPrefab = Resources.Load("Prefab/level/levelUnitBrick") as GameObject;
-        MonoBehaviour.Instantiate(objPrefab);
+        //GameObject objPrefab = Resources.Load("Prefab/level/levelUnitBrick") as GameObject;
+       // MonoBehaviour.Instantiate(objPrefab);
 	}
         
 	// Update is called once per frame
@@ -37,7 +37,7 @@ public class leveCreater : MonoBehaviour {
         
 	}
 
-    #region Private namespace
+    #region parseAndSave DATA
     //parse and save xml data to array
     private void parseAndSaveLevel()
     {
@@ -103,6 +103,42 @@ public class leveCreater : MonoBehaviour {
 
         return false;
 
+    }
+    #endregion
+
+    #region CreateMap according to data
+    private void createLevel()
+    {
+        /*foreach (List<Char> rowList in mData)
+        {
+            foreach (Char c in rowList)
+            {
+                Debug.Log(c);
+            }
+        }*/
+        int k = 0;
+        GameObject objPrefab ;//= Resources.Load("Prefab/level/levelUnitBrick") as GameObject;
+        // MonoBehaviour.Instantiate(objPrefab);
+        Vector3 brickPos;
+        for (int i = 0; i < mData.Count; i++)
+        {
+            for (int j = 0; j < mData[i].Count; j++)
+            {
+                //Debug.Log(i);
+                if (mData[i][j] == '1')
+                {
+                    objPrefab = Resources.Load("Prefab/level/levelUnitBrick") as GameObject;
+                    brickPos = new Vector3(i, 0, j);
+                    Quaternion t = new Quaternion(0, 0, 0, 0);
+                    MonoBehaviour.Instantiate(objPrefab, brickPos, t);
+                    // Debug.Log(j);
+                    Debug.Log(mData[i][j]);
+                }
+                //k++;
+                //Console.
+            }
+        }
+        Debug.Log(k);
     }
     #endregion
 }
