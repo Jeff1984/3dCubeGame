@@ -128,7 +128,7 @@ public class leveCreater : MonoBehaviour {
                 if (mData[i][j] == '1')
                 {
                     objPrefab = Resources.Load("Prefab/level/levelUnitBrick") as GameObject;
-                    brickPos = new Vector3(i, 0, j);
+                    brickPos = new Vector3(j, 0, i);
                     Quaternion t = new Quaternion(0, 0, 0, 0);
                     MonoBehaviour.Instantiate(objPrefab, brickPos, t);
                     // Debug.Log(j);
