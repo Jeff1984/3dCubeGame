@@ -4,3 +4,7 @@ Assets/Model
 *.meta
 Assets/UnityVS/
 Temp/
+3dCube-csharp.sln
+3dCube.sln
+Assembly-CSharp-vs.csproj
+Assembly-CSharp.csproj

@@ -1,0 +1,12 @@
+D:\Old_D\unity3d\3dCube\Temp\bin\Debug\Assembly-CSharp.dll
+D:\Old_D\unity3d\3dCube\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\Old_D\unity3d\3dCube\Temp\bin\Debug\UnityEditor.dll
+D:\Old_D\unity3d\3dCube\Temp\bin\Debug\UnityEngine.dll
+D:\Old_D\unity3d\3dCube\Temp\bin\Debug\UnityEngine.UI.dll
+D:\Old_D\unity3d\3dCube\Temp\bin\Debug\Mono.Cecil.dll
+D:\Old_D\unity3d\3dCube\Temp\bin\Debug\nunit.framework.dll
+D:\Old_D\unity3d\3dCube\Temp\bin\Debug\Unity.DataContract.dll
+D:\Old_D\unity3d\3dCube\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\Old_D\unity3d\3dCube\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+D:\Old_D\unity3d\3dCube\obj\Debug\Assembly-CSharp.dll
+D:\Old_D\unity3d\3dCube\obj\Debug\Assembly-CSharp.pdb

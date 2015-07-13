@@ -133,6 +133,11 @@ public class leveCreater : MonoBehaviour {
                     MonoBehaviour.Instantiate(objPrefab, brickPos, t);
                     // Debug.Log(j);
                     Debug.Log(mData[i][j]);
+					if(j==2)
+					{
+						TweenPosition tween=objPrefab.GetComponent<TweenPosition>();
+						tween.play();
+					}
                 }
                 //k++;
                 //Console.
